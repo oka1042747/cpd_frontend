@@ -117,6 +117,10 @@ document.getElementById('fetch-data-btn').addEventListener('click', function() {
         url: 'https://1jios0mkm5.execute-api.ap-northeast-1.amazonaws.com/test-1/CPD-API-GET-Measurement-data',
         method: 'GET',
         dataType: 'json',
+        headers:{
+            'x-api-key': 'zkxs3TOKKI6VaXaoo4sF16yl0j3yxYxP4QnOPsPp',
+        },
+
         success: function(tabledata) {
             console.log('データの取得に成功しました:', tabledata);
             // Tabulatorのコンポーネントをグローバル変数として退避する。
